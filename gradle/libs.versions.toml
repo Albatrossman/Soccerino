@@ -4,6 +4,7 @@ kotlin = "2.2.20"
 
 jetbrains-kotlinx-coroutines = "1.10.2"
 jetbrains-kotlinx-serialization = "1.9.0"
+jetbrains-kotlinx-coroutines = "1.10.2"
 
 google-devtools-ksp = "2.2.20-2.0.3"
 google-dagger-hilt = "2.57.1"
@@ -25,12 +26,16 @@ ktor-client = "3.3.0"
 
 junit = "4.13.2"
 
+mock = "1.14.5"
+
 jakewharton-timber = "5.0.1"
 
 [libraries]
 jetbrains-kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "jetbrains-kotlinx-coroutines" }
 jetbrains-kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "jetbrains-kotlinx-coroutines" }
 jetbrains-kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "jetbrains-kotlinx-serialization" }
+jetbrains-kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "jetbrains-kotlinx-coroutines" }
+jetbrains-kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "jetbrains-kotlinx-coroutines" }
 
 google-dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "google-dagger-hilt" }
 google-dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "google-dagger-hilt" }
@@ -67,6 +72,8 @@ ktor-client-contentnegotiation = { group = "io.ktor", name = "ktor-client-conten
 ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor-client" }
 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
+
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mock" }
 
 jakewharton-timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "jakewharton-timber" }
 
