@@ -22,4 +22,5 @@ dependencies {
     testImplementation(libs.jetbrains.kotlinx.coroutines.test)
     testImplementation(libs.junit)
     testImplementation(libs.mockk)
+    testImplementation(libs.kotest.assertions)
 }

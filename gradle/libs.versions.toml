@@ -27,6 +27,7 @@ ktor-client = "3.3.0"
 junit = "4.13.2"
 
 mock = "1.14.5"
+kotest = "6.0.3"
 
 jakewharton-timber = "5.0.1"
 
@@ -74,6 +75,7 @@ ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serializatio
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
 mockk = { group = "io.mockk", name = "mockk", version.ref = "mock" }
+kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest" }
 
 jakewharton-timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "jakewharton-timber" }
 
