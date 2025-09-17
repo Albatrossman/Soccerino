@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Soccerino"
 include(":app")
+include(":core:common")
