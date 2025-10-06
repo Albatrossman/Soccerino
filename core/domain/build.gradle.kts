@@ -1,26 +1,17 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-
 plugins {
-    id("java-library")
-    alias(libs.plugins.jetbrains.kotlin.jvm)
-}
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
-}
-
-kotlin {
-    compilerOptions {
-        jvmTarget = JvmTarget.JVM_11
-    }
+    id("convention.kotlin.library")
+    alias(libs.plugins.jetbrains.kotlin.serialization)
 }
 
 dependencies {
+    implementation(project(":core:common"))
+
     implementation(libs.jetbrains.kotlinx.coroutines.core)
+    implementation(libs.jetbrains.kotlinx.serialization.json)
 
     testImplementation(libs.jetbrains.kotlinx.coroutines.test)
     testImplementation(libs.junit)
     testImplementation(libs.mockk)
+    testImplementation(libs.turbine)
     testImplementation(libs.kotest.assertions)
 }
